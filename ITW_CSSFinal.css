@@ -1,0 +1,298 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper,
+#item_view {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+
+}
+
+#item_view {
+    /* display: none; */
+}
+
+header {
+    height: 10%;
+}
+
+nav {
+    height: 10%;
+    border: 2px solid lightgray;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#options label {
+    padding-right: 10px;
+}
+
+#grid_table {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+.column {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    vertical-align: top;
+}
+
+#item {
+    text-align: right;
+    padding-right: 25px;
+}
+
+#item_label {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    background-color: lightgray;
+    grid-column: 1 / span 2;
+
+}
+
+#item_content {
+    background-color: lightgray;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+#image_map {
+    padding: 10px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    width: auto;
+    margin: auto;
+}
+
+.image_slide {
+    display: inline-block;
+    width: 100%;
+    aspect-ratio: 5/4;
+}
+
+#gallery_images {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    column-gap: 9px;
+}
+
+#main_image_slide {
+    width: 100%;
+    display: inline-block;
+}
+
+#image_content {
+    padding-left: 10px;
+}
+
+.row:nth-child(odd) {
+    background-color: gray;
+}
+
+.row:nth-child(even) {
+    background-color: lightgray;
+}
+
+.row:nth-child(1) {
+    background-color: white;
+    font-weight: bold;
+}
+
+#item_price {
+    float: right;
+}
+
+#exit_button {
+    text-align: right;
+    padding-bottom: .5em;
+}
+
+#item_buttons {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+#item_desc_full {
+    font-size: large;
+}
+
+select {
+    height: 2em;
+}
+
+button {
+    height: 1.5em;
+}
+
+.column #image {
+    padding: 0 5px;
+    max-width: 70%;
+    object-fit: cover;
+}
+
+#size_menu {
+    margin-bottom: 5px
+}
+
+#color_menu {
+    margin-bottom: 5px
+}
+
+#quant_menu {
+    margin-bottom: 5px
+}
+
+#buy_button {
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+#select_category {
+    display: inline-block;
+    text-align: center;
+}
+
+@media screen and (max-width:480px) {
+    #wrapper {
+        width: 100%;
+    }
+
+    #item_view {
+        width: 100%;
+    }
+
+    .column #image {
+        max-width: 95%;
+    }
+
+    .column {
+        width: 100%;
+        padding-bottom: 10px;
+        font-size: large;
+    }
+
+    .row {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .row:nth-child(1) {
+        display: none;
+    }
+
+    main {
+        padding-top: 10px;
+    }
+
+    input[type='radio'] {
+        transform: scale(1.2);
+        appearance: none;
+        background-color: aliceblue;
+        margin: 5px;
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .row:nth-child(odd) {
+        background-color: lightgray;
+    }
+
+    #image_map {
+        width: 95%;
+        display: grid;
+        grid-column: 1/3;
+        padding: 0px;
+    }
+
+    #buy_button {
+        text-align: center;
+    }
+
+    #buy_button button {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        height: 2.5em;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    #size_menu label {
+        display: none;
+    }
+
+    #color_menu label {
+        display: none;
+    }
+
+    #quant_menu label {
+        display: none;
+    }
+
+    #exit_button button {
+        height: 2.0em;
+        width: 2.0em;
+        font-size: larger;
+    }
+
+    #size_menu select {
+        margin-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #color_menu select {
+        margin-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #quant_menu select {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #size_menu {
+        text-align: center;
+    }
+
+    #color_menu {
+        text-align: center;
+    }
+
+    #quant_menu {
+        text-align: center;
+    }
+
+    #item_name {
+        font-size: larger;
+    }
+
+    #item_price {
+        font-size: large;
+    }
+
+    #grid_table {
+        text-align: center;
+    }
+
+    #select_category {
+        text-align: center;
+    }
+}

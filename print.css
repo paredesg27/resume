@@ -1,0 +1,39 @@
+/* print.css */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header h1 {
+    font-size: 2em; /* Adjust font size for printing */
+}
+
+/* Adjust margins and layout for printing */
+main {
+    margin: 1em;
+}
+
+/* Hide elements that should not be printed */
+#contact-top,
+#header-seperator,
+#name-seperator {
+    display: none;
+}
+
+/* Adjust font size and styles for printing */
+a {
+    color: black; /* Change link color for printing */
+    font-weight: normal;
+}
+#job1{
+    display: none;
+}
+#projects{
+    display: none;
+}
+
+/* Add page breaks before major sections */
+
+
+/* Adjust other styles as needed for printing */
